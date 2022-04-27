@@ -1,0 +1,177 @@
+.projetos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 60px;
+  border-radius: 4px;
+}
+
+#wildbeast {
+  margin-bottom: 80px;
+}
+
+.projetos img {
+  max-width: 100%;
+  max-height: auto;
+  object-fit: cover;
+  border-radius: 0px 0px 4px 0px;
+}
+
+.informacoes-projetos {
+  padding: 60px 40px;
+}
+
+.subtitulo h2 {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.subtitulo h2:before {
+  content: "";
+  height: 50px;
+  width: 10px;
+  background: var(--grad);
+  display: inline-block;
+  position: absolute;
+  top: 4px;
+  left: -16px;
+}
+
+.subtitulo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.subtitulo span {
+ margin-top: 12px;
+}
+
+.descricoes p:first-child {
+  margin-bottom: 12px;
+}
+
+.descricoes p:last-child {
+  margin-bottom: 40px;
+}
+
+.habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.habilidades li {
+  background: var(--p1);
+  padding: 10px 20px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+
+#flexblog {
+  padding: 60px 0px;
+  margin-bottom: 60px;
+  background-image: linear-gradient(to right, var(--w) 22%, var(--p12) 0%);
+}
+
+#flexblog img {
+  border-radius: 0px 4px 4px 0px;
+}
+
+#flexblog .projetos {
+  margin-bottom: 0px;
+  box-shadow: none;
+  align-items: center;
+}
+
+#flexblog .habilidades li {
+  box-shadow: none;
+  background: var(--c1);
+}
+
+#projetos .contato {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  align-items: center;
+  position: initial;
+}
+
+#projetos .conversa {
+  position: relative;
+}
+
+#projetos .conversa p {
+  margin-bottom: 0px;
+}
+
+#projetos .conversa img {
+  top: 80px;
+  left: 180px;
+}
+
+#projetos .redes {
+  margin-top: 0px;
+}
+
+#projetos .redes li + li {
+  margin-top: 24px;
+}
+
+@media (max-width: 960px) {
+  .projetos {
+    grid-template-columns: 1fr;
+    margin-bottom: 40px;
+  }
+  .informacoes-projetos {
+    padding: 40px;
+  }
+  #flexblog {
+    background: var(--p12);
+    padding: 20px 0px 0px 0px;
+    margin-bottom: 40px;
+  }
+  #projetos .contato {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  #projetos .conversa img {
+    display: none;
+  }
+  #wildbeast {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 560px) {
+  .informacoes-projetos {
+    padding: 20px;
+  }
+  .subtitulo h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .subtitulo h2::before {
+    height: 37px;
+  }
+  .subtitulo span {
+    font-size: 20px;
+  }
+  .descricoes p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .descricoes p:last-child {
+    margin-bottom: 20px;
+  }
+  .habilidades {
+    font-size: 16px;
+  }
+  .habilidades li {
+    padding: 8px 16px;
+  }
+  #projetos .redes li + li {
+    margin-top: 8px;
+  }
+  #wildbeast {
+    margin-bottom: 20px;
+  }
+}
