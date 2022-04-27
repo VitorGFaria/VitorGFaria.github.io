@@ -116,6 +116,9 @@
   .formacao h2::before {
     display: none;
   }
+  .formacao-lista li {
+    padding-right: 20px;
+  }
   .formacao-lista li:first-child,
   .formacao-lista li:last-child {
     margin-bottom: 32px;
