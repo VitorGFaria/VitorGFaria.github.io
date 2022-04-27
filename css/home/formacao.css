@@ -1,0 +1,126 @@
+#formacao {
+  box-shadow: inset 0 -100px var(--p12);
+}
+
+.formacao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.formacao h2 {
+  margin: 80px 0px 60px 0px;
+  position: relative;
+}
+
+.formacao h2::before {
+  content: "";
+  height: 50px;
+  width: 10px;
+  background: var(--grad);
+  display: inline-block;
+  position: absolute;
+  top: 17px;
+  left: -16px;
+}
+
+.formacao-lista li {
+  background: var(--w);
+  max-width: max-content;
+  padding: 20px;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.formacao-lista li:first-child {
+  margin-bottom: 40px;
+}
+
+.formacao-lista li:last-child {
+  margin-bottom: 60px;
+}
+
+.formacao-lista li h3 {
+  margin-bottom: 24px;
+}
+
+.formacao-lista li p {
+  margin-bottom: 24px;
+  max-width: 40ch;
+}
+
+.formacao-lista li span:last-child {
+  position: absolute;
+  right: 20px;
+}
+
+.informacoes-formacao > p {
+  margin-bottom: 28px;
+}
+
+.formacao img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0px 0px 4px 4px;
+}
+
+@media (max-width: 1100px) {
+  .formacao h2 {
+    font-size: 64px;
+    line-height: 125%;
+    margin-bottom: 48px;
+  }
+  .formacao h2::before {
+    top: 13px;
+  }
+}
+
+@media (max-width: 960px) {
+  .formacao {
+    gap: 20px;
+  }
+  .formacao h2 {
+    margin: 40px 0px 32px 0px;
+  }
+  .formacao-lista li {
+    padding-right: 0px;
+  }
+  .formacao-lista li:last-child {
+    margin-bottom: 40px;
+  }
+  .formacao-lista li h3 {
+    font-size: 28px;
+  }
+  .formacao-lista li span:last-child {
+    display: block;
+    position: initial;
+    margin-top: 8px;
+  }
+  .informacoes-formacao > p {
+    margin-bottom: 18px;
+  }
+}
+
+@media (max-width: 560px) {
+  #formacao {
+    box-shadow: none;
+  }
+  .formacao {
+    grid-template-columns: 1fr;
+  }
+  .formacao h2 {
+    font-size: 48px;
+    margin-top: 32px;
+    margin-bottom: 20px;
+  }
+  .formacao h2::before {
+    display: none;
+  }
+  .formacao-lista li:first-child,
+  .formacao-lista li:last-child {
+    margin-bottom: 32px;
+  }
+  .formacao img {
+    display: none;
+  }
+}

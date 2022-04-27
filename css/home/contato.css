@@ -1,0 +1,96 @@
+.contato-bg {
+  background: var(--p12);
+}
+
+.contato {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+}
+
+.conversa p {
+  max-width: 35ch;
+  display: inline-block;
+  margin-bottom: 80px;
+}
+
+.conversa img {
+  position: absolute;
+  top: 80px;
+  left: 210px;
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.redes li {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.redes li + li {
+  margin-top: 12px;
+}
+
+@media (max-width: 960px) {
+  .contato {
+    gap: 20px;
+  }
+  .conversa p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .conversa img {
+    max-width: 16px;
+    top: 72px;
+    left: 180px;
+  }
+}
+
+@media (max-width: 800px) {
+  .contato {
+    gap: 16px;
+  }
+  .conversa p {
+    margin-bottom: 60px;
+    font-size: 18px;
+  }
+  .conversa img {
+    display: none;
+  }
+  .redes {
+    margin-top: 40px;
+  }
+  .redes a {
+    font-size: 18px;
+  }
+  .redes img {
+    max-width: 24px;
+  }
+}
+
+@media (max-width: 560px) {
+  .contato {
+    grid-template-columns: 1fr;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 24px;
+  }
+  .conversa p {
+    margin-bottom: 0px;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: none;
+  }
+  .redes {
+    margin-top: 0px;
+    justify-content: start;
+  }
+  .redes li + li {
+    margin-top: 0px;
+  }
+}

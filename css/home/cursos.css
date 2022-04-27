@@ -1,0 +1,98 @@
+.cursos-bg {
+  background: var(--p14);
+  padding-bottom: 80px;
+}
+
+.cursos h2 {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.cursos h2::before {
+  content: "";
+  height: 50px;
+  width: 10px;
+  background: var(--grad);
+  display: inline-block;
+  position: absolute;
+  top: 17px;
+  left: -16px;
+}
+
+.lista-cursos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 60px;
+  box-sizing: border-box;
+  max-width: 1220px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+.lista-cursos li {
+  background: var(--c12);
+  padding: 20px;
+  border-radius: 4px;
+  width: 260px;
+  box-shadow: 1px 1px 1px rgba(82, 82, 82, 0.35);
+  position: relative;
+}
+
+.lista-cursos li span {
+  display: inline-block;
+}
+
+span.hora {
+  margin-bottom: 28px;
+}
+
+.lista-cursos li p {
+  margin-bottom: 28px;
+}
+
+span.ano {
+  position: absolute;
+  right: 20px;
+}
+
+@media (max-width: 1100px) {
+  .cursos h2 {
+    font-size: 64px;
+    line-height: 125%;
+    padding-top: 40px;
+  }
+  .cursos h2::before {
+    top: 53px;
+  }
+}
+
+@media (max-width: 960px) {
+  .cursos h2 {
+    margin-bottom: 32px;
+  }
+  .lista-cursos {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 560px) {
+  .cursos-bg {
+    padding-bottom: 40px;
+  }
+  .cursos h2 {
+    font-size: 48px;
+    padding-top: 32px;
+    margin-bottom: 20px;
+  }
+  .cursos h2::before {
+    display: none;
+  }
+  .lista-cursos {
+    gap: 20px;
+  }
+  .lista-cursos li p,
+  span.hora {
+    margin-bottom: 16px;
+  }
+}
